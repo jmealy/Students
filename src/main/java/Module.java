@@ -15,7 +15,4 @@ public class Module {
 	public void addStudent(Student s){
 		students.add(s);
 	}
-	
-	
-
 }
