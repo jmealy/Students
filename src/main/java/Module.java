@@ -4,12 +4,12 @@ import java.util.ArrayList;
 public class Module {
 	
 	String name;
-	int id;
+	String code;
 	ArrayList<Student> students;
 	
-	public Module(String nm, int ident){
+	public Module(String nm, String ident){
 		name = nm;
-		id = ident;
+		code = ident;
 	}
 	
 	public void addStudent(Student s){
