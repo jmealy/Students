@@ -5,7 +5,8 @@ import org.joda.time.DateTime;
 public class Course {
 	
 	static String name;
-	ArrayList<Module> modules;
+	ArrayList<Module> modules = new ArrayList<Module>();
+	ArrayList<Student> students = new ArrayList<Student>();
 	DateTime startDate;
 	DateTime endDate;
 	
@@ -15,11 +16,12 @@ public class Course {
 		endDate = e;
 	}
 	
-	public static void main(String args[]){
-		Course c1 = new Course("ECE", new DateTime(2016,1,1,0,0), new DateTime(2016,5,5,0,0) );
-		Student s1 = new Student(name, 0, 0);
+	public void addModule(Module m){
+		modules.add(m);
 	}
-
 	
+	public void addStudent(Student s){
+		students.add(s);
+	}
 	
 }
