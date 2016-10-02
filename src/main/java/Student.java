@@ -1,8 +1,6 @@
 import java.util.ArrayList;
 import java.util.Calendar;
 
-import org.joda.time.DateTime;
-
 
 public class Student {
 	
@@ -20,11 +18,6 @@ public class Student {
 		id = ident;
 		course = crs;
 		course.addStudent(this);
-	}
-	
-	public static void main(String[] args){
-	
-		DateTime test = new DateTime();
 	}
 
 	

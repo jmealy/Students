@@ -4,7 +4,7 @@ import org.joda.time.DateTime;
 
 public class Course {
 	
-	static String name;
+	String name;
 	ArrayList<Module> modules = new ArrayList<Module>();
 	ArrayList<Student> students = new ArrayList<Student>();
 	DateTime startDate;
